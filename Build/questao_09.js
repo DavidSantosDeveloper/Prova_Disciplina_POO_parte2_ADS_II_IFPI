@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Triangulo = exports.Quadrado = void 0;
+const questao_08_js_1 = require("./questao_08.js");
+Object.defineProperty(exports, "Quadrado", { enumerable: true, get: function () { return questao_08_js_1.Quadrado; } });
+Object.defineProperty(exports, "Triangulo", { enumerable: true, get: function () { return questao_08_js_1.Triangulo; } });
+const quadrado = new questao_08_js_1.Quadrado(5);
+const outroQuadrado = new questao_08_js_1.Quadrado(6);
+console.log('Comparação entre quadrados:');
+console.log(quadrado.comparar(outroQuadrado));
+console.log(outroQuadrado.comparar(quadrado));
+const triangulo = new questao_08_js_1.Triangulo(4, 3);
+const outroTriangulo = new questao_08_js_1.Triangulo(3, 4);
+console.log('Comparação entre triângulos:');
+console.log(triangulo.comparar(outroTriangulo));
+console.log(outroTriangulo.comparar(triangulo));

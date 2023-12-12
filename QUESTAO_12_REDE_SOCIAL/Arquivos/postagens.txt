@@ -1,0 +1,7 @@
+1;teste;0;P;0;Sat Dec 09 2023 20:29:12 GMT-0300 (Horário Padrão de Brasília);1
+2;postagem avan�ada;3;PA;3;Sat Dec 09 2023 20:46:51 GMT-0300 (Horário Padrão de Brasília);1;# #  #   #    #     #feliz      ;3
+3;texto;0;P;0;Tue Dec 12 2023 17:10:32 GMT-0300 (Horário Padrão de Brasília);5
+4;texto;0;P;0;Tue Dec 12 2023 17:13:57 GMT-0300 (Horário Padrão de Brasília);5
+5;hoje;0;P;0;Tue Dec 12 2023 17:15:48 GMT-0300 (Horário Padrão de Brasília);5
+6;postagem avancada dia 12 de dezembro;0;PA;0;Tue Dec 12 2023 17:56:27 GMT-0300 (Horário Padrão de Brasília);6;#rede social ;5
+7;post simples;1;P;0;Tue Dec 12 2023 17:57:13 GMT-0300 (Horário Padrão de Brasília);6

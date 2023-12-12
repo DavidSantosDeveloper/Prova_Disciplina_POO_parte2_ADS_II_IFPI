@@ -1,0 +1,76 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RepositorioDePerfisArray = void 0;
+const Excecoes_js_1 = require("../../Excecoes/Excecoes.js");
+class RepositorioDePerfisArray {
+    constructor(perfis) {
+        this._perfis = [];
+        this._perfis = perfis;
+    }
+    getTamanho() {
+        return this._perfis.length;
+    }
+    getPerfis() {
+        return this._perfis;
+    }
+    setPerfis(lista_de_perfis) {
+        this._perfis = lista_de_perfis;
+    }
+    incluir(perfil) {
+        this._perfis.push(perfil);
+    }
+    consultarPorNome(nome_procurado) {
+        let resultado_da_consulta = null;
+        for (const perfil_atual of this._perfis) {
+            if (perfil_atual.getNome() == nome_procurado) {
+                resultado_da_consulta = perfil_atual;
+            }
+        }
+        if (resultado_da_consulta == null) {
+            throw new Excecoes_js_1.Perfil_Inexistente_Error("Perfil inexistente!");
+        }
+        return resultado_da_consulta;
+    }
+    consultarPorId(id) {
+        let resultado_da_consulta = null;
+        for (const perfil_atual of this._perfis) {
+            if (perfil_atual.getId() == id) {
+                resultado_da_consulta = perfil_atual;
+            }
+        }
+        if (resultado_da_consulta == null) {
+            throw new Excecoes_js_1.Perfil_Inexistente_Error("Perfil inexistente!");
+        }
+        return resultado_da_consulta;
+    }
+    consultar(id, nome, email) {
+        let resultado_da_consulta = null;
+        if (id != undefined) {
+            for (const perfil_atual of this._perfis) {
+                if (perfil_atual.getId() == id) {
+                    resultado_da_consulta = perfil_atual;
+                }
+            }
+            //  resultado_da_consulta=this._perfis.filter((perfil_atual)=>perfil_atual.getId()==id)[0]
+        }
+        else if (nome != undefined) {
+            for (const perfil_atual of this._perfis) {
+                if (perfil_atual.getNome() == nome) {
+                    resultado_da_consulta = perfil_atual;
+                }
+            }
+        }
+        else if (email != undefined) {
+            for (const perfil_atual of this._perfis) {
+                if (perfil_atual.getNome() == nome) {
+                    resultado_da_consulta = perfil_atual;
+                }
+            }
+        }
+        if (resultado_da_consulta == null) {
+            throw new Excecoes_js_1.Perfil_Inexistente_Error("Perfil inexistente!");
+        }
+        return resultado_da_consulta;
+    }
+}
+exports.RepositorioDePerfisArray = RepositorioDePerfisArray;
